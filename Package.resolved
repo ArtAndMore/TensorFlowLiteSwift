@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TensorFlowLiteC",
+        "repositoryURL": "https://github.com/kewlbear/TensorFlowLiteC.git",
+        "state": {
+          "branch": null,
+          "revision": "9d717f9dd42a91e850eff9cfd66ce42d81125829",
+          "version": "2.7.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

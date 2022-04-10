@@ -10,11 +10,18 @@ let package = Package(
             targets: ["TensorFlowLite"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/kewlbear/TensorFlowLiteC.git", .branch("master")),
+        .package(url: "https://github.com/kewlbear/TensorFlowLiteC.git", .exact("2.7.0")),
     ],
     targets: [
         .target(
             name: "TensorFlowLite",
-            dependencies: ["TensorFlowLiteC"]),
+            dependencies: [
+                .product(name: "TensorFlowLiteC", package: "TensorFlowLiteC"),
+            ],
+            resources: [
+                .copy("LICENSE"),
+                .copy("README.md")
+            ]
+        ),
     ]
 )
